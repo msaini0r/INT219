@@ -5,7 +5,7 @@ p {
 
 * {
   background-color: blanchedalmond;
-  width: 80%;
+  width: 100%;
 }
 
 .grey {
@@ -16,7 +16,7 @@ span {
   color: indigo;
 }
 
-h3 {
+.short {
   color: rgb(44, 160, 106);
   width: 50%;
 }
