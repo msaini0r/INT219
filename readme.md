@@ -1,6 +1,8 @@
 # INT-219
 
-### Course files of all the lectures including assigned task's in classroom.
+<br>
+
+<h3> Course files of all the lectures including assigned task's in classroom. </h3>
 
 <br>
 
