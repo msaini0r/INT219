@@ -1,0 +1,29 @@
+/* h1 {
+  border: 2px solid red;
+  padding: 10px;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* go through difference of content-box and border-box*/
+}
+
+header {
+  padding: 1.5rem;
+  width: 400px;
+  border: 2px dashed red;
+}
+
+.container {
+  border: 3px ridge green;
+  border-top: 2px solid coral;
+  border-bottom: 13px solid green;
+  border-right: 10px dotted blue;
+  border-left: 15px ridge aqua;
+  outline: 5px solid brown;
+  outline-offset: 15px; /* you can give negative and positive values.*/
+  font-size: 1.5rem;
+  margin: 1.5rem 2rem 3rem 4rem; /* order is top right bottom left basically clockwise*/
+  padding: 1.5rem 2rem 2rem 3rem;
+}
