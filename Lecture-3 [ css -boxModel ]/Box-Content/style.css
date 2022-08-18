@@ -27,3 +27,13 @@ header {
   margin: 1.5rem 2rem 3rem 4rem; /* order is top right bottom left basically clockwise*/
   padding: 1.5rem 2rem 2rem 3rem;
 }
+
+.circle {
+  background-color: blueviolet;
+  width: 100px;
+  height: 100px;
+  border: 3px double brown;
+  margin: 3rem auto;
+  border-radius: 5px;
+  text-align: center;
+}

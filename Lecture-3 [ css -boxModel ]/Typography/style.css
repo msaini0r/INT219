@@ -1,0 +1,21 @@
+body {
+  /* padding: 25%; */
+  font-size: 2rem;
+  color: brown;
+}
+
+p {
+  text-decoration: none;
+  text-transform: lowercase;
+  text-align: justify;
+  text-indent: 100px;
+  line-height: 80px;
+  font-weight: 600;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input,
+button {
+  font: inherit;
+}
