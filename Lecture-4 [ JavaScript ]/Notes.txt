@@ -1,0 +1,40 @@
+1) Javascript is used to make the website interactive and dynamic.
+
+2) We use var, let, const to define datatypes. var and let seems to be same but they are limited to their block scope. 
+
+3) types of datatypes
+
+Undefined
+Number
+String
+boolean
+
+4) We can only do override var with var, let with let, & const with const . 
+
+5) The main difference in let and const is let is limited to their scope wheres const is not. [study it more yourself.]
+
+5) Undefined and null are not the same thing. 
+
+6) Null is considered as a Object.
+
+7) ' === ' means comparison. basically true or false. We can also the like this > or <.
+
+const hey = 60;
+const bye = 30;
+
+/** === */
+
+hey === bye // answer will be false
+
+/*** > or < ***/
+
+hey<=bye // answer will be false
+hey>=bye // answer will be true
+
+8) You can add string like 'abc '  with number like '60'. so result would be 'abc60'
+
+9) We always add javascript in the last of the body because javascript takes a lot of time to load. // important
+
+10) We can us defer keyword if we wish to add the javascript in the top not in the body.
+
+11) 
