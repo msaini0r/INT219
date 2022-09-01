@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+
+<body>
+    <script>
+        class pizza {
+            constructor(pizzatype) {
+                this.pizzatype = "spicy paneer"
+                this.size = "Medium ";
+                this.crust = " Wheat Pizza";
+            }
+            bake() {
+                document.write("Baking a " + (this.size) + (this.pizzatype) + (this.crust) + " pizza")
+            }
+        }
+        const myPizza = new pizza();
+        myPizza.bake();
+        document.write("<br>")
+        document.write(myPizza.size)
+    </script>
+</body>
+
+</html>

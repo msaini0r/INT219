@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+    <Script>
+
+        const myObj = { name: "harsh" };
+        document.write(myObj.name);
+        document.write("<br>");
+        const myObj1 = {
+            name: "harsh",
+            present: true,
+            hobbies: ["EAT", "Sleep", "Repeat"],
+            grade: function () {
+                return "A";
+            }
+        };
+        document.write(myObj1.grade())
+        document.write("<br>");
+        document.write(myObj1.hobbies);
+
+        const vehicles = {
+            wheels: 4,
+            engine: function () {
+                return "diesel Engine";
+            }
+        };
+
+        const truck = Object.create(vehicles);
+        truck.door = 2;
+        document.write("<br>");
+        document.write(truck.wheels);
+        document.write("<br>");
+        document.write(truck.doors);
+
+    </Script>
+</body>
+
+</html>
