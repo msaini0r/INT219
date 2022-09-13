@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <p>First Name: <input type="text" name="firstname" required></p>
+        <p>Last Name: <input type="text" name="lastname" required></p>
+        <p>Gender:
+            <input type="radio" name="radiocheck" required>Male
+            <input type="radio" name="radiocheck" required>Female
+        </p>
+        <p>Hobbies:
+            <input type="radio" name="radiocheck" required>Cricket
+            <input type="radio" name="radiocheck" required>Football
+        </p>
+        <input type="button" value="button" onclick="fun();" />
+    </form>
+
+    <script type="text/javascript">
+        function fun() {
+            alert("Response Submitted");
+        }  
+    </script>
+</body>
+
+</html>

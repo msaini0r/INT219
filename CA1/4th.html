@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <button onclick="dabMan()"><img src='cake.jpg' id='myImage'>
+        </button>
+
+    </div>
+
+
+    <script>
+        var image = document.getElementById('myImage');
+
+        image.addEventListener('click', function () {
+            changeImage();
+        });
+
+        function changeImage() {
+            image.src = 'pie.jpg';
+        }
+    </script>
+
+
+
+</body>
+
+</html>
