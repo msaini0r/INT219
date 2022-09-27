@@ -17,18 +17,16 @@
 
             quantity: 5,
 
-            price: 0
+            price: 0,
 
+            getTotal: function (unitPrice) {
+
+                var price = this.price + unitPrice;
+
+                return price;
+
+            }
         };
-
-        var getTotal = function (unitPrice) {
-
-            var price = price + unitPrice;
-
-            return price;
-
-        };
-
         console.log(`Total price of product is ${obj.price}.`);
 
         console.log(obj.getTotal(100));
