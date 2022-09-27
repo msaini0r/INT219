@@ -1,43 +1,45 @@
 <!DOCTYPE html>
-<html>
-<title>ALERT BOX</title>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<style media="screen">
+    .checkbox-round {
+        border: 1px solid;
+        border-radius: 100%;
+    }
+</style>
 
 <body>
-    <form>
-        <label> firstname:</label>
-        <input type="text" id="text1" />
-        <br />
-        <br />
-        <label> lastname:</label>
-        <input type="text" id="text2" />
-        <br />
-        <br />
-        <label> Gender:</label>
-        <input type="radio" />
-        <label> Male</label>
-        <input type="radio" />
-        <label> Female</label>
-        <br />
-        <br />
-        <label> Hobbies:</label>
-        <input type="radio" />
-        <label> Cricket </label>
-        <input type="radio" />
-        <label> Football</label>
-        <br />
-        <br />
-        <button onclick="myfun()">Submit</button>
+
+    <form id="foo" onsubmit="formAlert(); return false;">
+        <p><label for="first_name">First Name<label><input type="text" id="first_name" value="" /></p>
+        <p><label for="last_name">Last Name<label><input type="text" id="last_name" value="" /></p>
+        <label for="radio" id="gender">Gender:</label>
+        <input type="checkbox" class="checkbox-round" name="" value="">Male
+        <input type="checkbox" class="checkbox-round" name="" value="">Women <br><br>
+
+        <!-- Hobbies -->
+        <label for="text" id="hobbies">Hobbies:</label>
+        <input type="checkbox" name="" value="">Cricket
+        <input type="checkbox" name="" value="">Football<br><br>
+
+        <p><input type="submit" value="click me" /></p>
     </form>
 
-    <script>
-        const myfun = () => {
-            var x1 = document.getElementById('text1').value;
-            var x2 = document.getElementById('text2').value;
+    <script type="text/javascript">
+        function formAlert() {
+            alert_string = '';
+            alert_string = alert_string + document.getElementById('first_name').value;
+            alert_string = alert_string + ' ';
+            alert_string = alert_string + document.getElementById('last_name').value;
 
-            alert(" firstname: " + x1 + "\n lastname: " + x2);
+            alert(alert_string);
         }
     </script>
-     
+
 </body>
 
 </html>
