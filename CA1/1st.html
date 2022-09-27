@@ -32,26 +32,26 @@
             const genders = document.querySelectorAll('input[name="gender"]');
             const hobbies = document.querySelectorAll('input[name="hobby"]');
 
-            let g;
-            let h;
+            let gen;
+            let hob;
             let x2 = document.getElementById('text2').value;
             let x1 = document.getElementById('text1').value;
             for (const gender of genders) {
                 console.log(gender)
                 if (gender.checked) {
-                    g = gender.value;
+                    gen = gender.value;
                     break;
                 }
             }
             for (const hobby of hobbies) {
 
                 if (hobby.checked) {
-                    h = hobby.value;
+                    hob = hobby.value;
                     break;
                 }
             }
 
-            alert(" firstname: " + x1 + "\n lastname: " + x2 + " " + "\n Gender: " + g + "\n Hobby :  " + h);
+            alert(" firstname: " + x1 + "\n lastname: " + x2 + " " + "\n Gender: " + gen + "\n Hobby :  " + hob);
 
         }) 
     </script>
