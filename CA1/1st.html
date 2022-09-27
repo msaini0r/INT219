@@ -23,10 +23,12 @@
         <input type="button" value="button" onclick="fun();" />
     </form>
 
-    <script type="text/javascript">
-        function fun() {
-            alert("Response Submitted");
-        }  
+    <script>
+        function getinput() {
+            const inputVal = document.querySelectorAll('#Firstname, #Lastname').value;
+            // var outputVal = document.getElementById("Lastname").value;
+            alert(inputVal);
+        };
     </script>
 </body>
 

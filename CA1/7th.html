@@ -9,28 +9,30 @@
 </head>
 
 <body>
-    <script>
+    <script type="text/javascript">
+
         let obj = {
 
-            name: Shir,
+            name: "Shir",
 
-            quantity=5,
+            quantity: 5,
 
-            price=0
+            price: 0
 
-const getTotal: function(unitPrice) {
+        };
 
-                price = price + unitPrice;
+        var getTotal = function (unitPrice) {
 
-                return price;
+            var price = price + unitPrice;
 
-            }
+            return price;
 
-        }
+        };
 
-        console.log(`Total price of product is ${obj.price}.`)
+        console.log(`Total price of product is ${obj.price}.`);
 
-        console.log(obj.getTotal(100))
+        console.log(obj.getTotal(100));
+
     </script>
 </body>
 
