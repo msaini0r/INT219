@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
+<title>ALERT BOX</title>
 
 <body>
     <form>
-        <p>First Name: <input type="text" name="firstname" id="text1" required></p>
-        <p>Last Name: <input type="text" name="lastname" id="text2" required></p>
+        <label> firstname:</label>
+        <input type="text" id="text1" />
+        <br />
+        <br />
+        <label> lastname:</label>
+        <input type="text" id="text2" />
+        <br />
         <br />
         <label> Gender:</label>
         <input type="radio" />
@@ -26,7 +25,8 @@
         <input type="radio" />
         <label> Football</label>
         <br />
-        <input type="button" value="button" onclick="fun();" />
+        <br />
+        <button onclick="myfun()">Submit</button>
     </form>
 
     <script>
@@ -34,7 +34,7 @@
             var x1 = document.getElementById('text1').value;
             var x2 = document.getElementById('text2').value;
 
-            alert(" firstname: " + x1 + "\n lastname: " + x2);
+            alert(" firstname: " + x1 + "\n lastname: " + x2 + "\n");
         }
     </script>
 </body>

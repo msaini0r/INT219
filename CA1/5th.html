@@ -9,19 +9,17 @@
 </head>
 
 <body>
-
-    <p>Annual Income</p>
-
+    <p id="income"></p>
+    <button onclick="display()">Display</button>
     <script>
-        const myObj1 = {
-            name: "Priyanka",
-            monthly_income: 20000,
-            ITR_ID: 22586
-        };
+        let person = { firstName: "Priyabk", MonthlyIncome: "20000", ITRID: "22586" };
+        let p = document.getElementById("income");
+        let totalannualincome = 12 * 20000;
+        function display() {
+            p.innerText = totalannualincome;
 
-        const annual = this.monthly_income * 12;
+        }
     </script>
-
 </body>
 
 </html>
