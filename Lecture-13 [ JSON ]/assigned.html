@@ -1,0 +1,63 @@
+<!-- create a webpage that has button start running and stop running .when the user clicks on start running , it should show
+the timer for running in the text box running time and the timer and image should stop as soon as the stop runnning
+button is clicked and "stop timer" time should be displayed in the text box of label running stopped at. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Start and Stop a Timer using JavaScript by DevCurry.com</title>
+    <style>
+        #myDIV {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: lightblue;
+            margin-top: 20px;
+        }
+    </style>
+    <script type="text/javascript">
+        var check = null;
+
+        function printDuration() {
+            if (check == null) {
+                var cnt = 0;
+
+                check = setInterval(function () {
+                    cnt += 1;
+                    document.getElementById("para").innerHTML = cnt;
+                }, 1000);
+
+                hello = () => {
+                    var x = document.getElementById("myDIV");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+            }
+        }
+
+        function stop() {
+            clearInterval(check);
+            check = null;
+            document.getElementById("para").innerHTML = '0';
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <p id="para">0</p>
+        <input id="btnStart" type="button" value="Start" onclick="printDuration();" />
+        <input id="btnStop" type="button" value="Stop" onclick="stop();" />
+        <button onclick="hello()">Try it</button>
+
+        <div id="myDIV">
+            This is my DIV element.
+        </div>
+    </div>
+</body>
+
+</html>
